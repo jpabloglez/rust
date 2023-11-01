@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  rust:
+    build: 
+      context: .
+      dockerfile: setup/Dockerfile.rust
+    container_name: rust
+    image: rust
+    # ports:
+    #   - 127.0.0.1:8000:8000
+    volumes:
+      - ./:/opt/rust/
+    ## command: python app/manage.py runserver 0.0.0.0:8000
+    tty: true

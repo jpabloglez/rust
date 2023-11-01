@@ -1,0 +1,9 @@
+# Folders to ignore
+data/
+target/
+*project/
+
+# Files to ignore
+*.csv
+*.pyc
+*.gz

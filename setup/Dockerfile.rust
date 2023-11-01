@@ -1,0 +1,7 @@
+FROM rust:slim-buster
+
+WORKDIR /opt/rust/
+
+COPY . .
+
+#EXPOSE 8000
